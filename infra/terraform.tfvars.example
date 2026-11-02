@@ -1,0 +1,13 @@
+# Copy this file to terraform.tfvars and fill it in.  (terraform.tfvars is git-ignored)
+
+subscription_id  = "00000000-0000-0000-0000-000000000000"   # az account show --query id -o tsv
+allowed_ssh_cidr = "45.112.151.0/24"                         # your public IP range
+
+# Optional overrides
+# location                   = "southeastasia"
+# vm_size                    = "Standard_B1s"
+# enable_function_app        = false    # set false if Azure says the consumption plan quota is 0
+# enable_notification_hub    = false
+# enable_role_assignments    = false    # set false if you get AuthorizationFailed on role assignments
+# existing_db_name           = "blooddb-isha1000"
+# existing_db_resource_group = "rg-blooddonation"

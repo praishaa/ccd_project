@@ -11,3 +11,7 @@ dist/
 *.tfstate
 *.tfstate.*
 .DS_Store
+*.tfvars
+*.tgz
+.env.*
+!.env.example

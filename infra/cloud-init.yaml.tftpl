@@ -1,0 +1,8 @@
+#cloud-config
+# Runs once on first boot: installs Docker so the backend container can run.
+package_update: true
+packages:
+  - docker.io
+runcmd:
+  - systemctl enable --now docker
+  - usermod -aG docker ${admin_username}
